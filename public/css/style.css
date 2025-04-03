@@ -1,0 +1,50 @@
+:root {
+    scroll-behavior: smooth;
+    --bs-font-sans-serif: 'Trebuchet MS', Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;
+  }
+
+body
+{
+    font-family: var (--bs-font-sans-serif);
+    background-image:  url('https://img.freepik.com/free-vector/watercolour-light-blue-background_78370-3537.jpg?w=900&t=st=1706772956~exp=1706773556~hmac=c0d19e3bd7850eeda6cf9389eb9e1e3e2d448b04ddb0209158b726898047313b'
+    )
+}
+
+main
+{
+    min-height: calc(100vh - 56px - 56px);
+}
+
+html, body {
+    overflow-x: hidden;
+  }
+
+  @media (min-width: 769px) {
+
+  .customsection{
+  margin:auto;
+  margin-top:40px;
+  padding: 80px 200px 80px 200px;
+  }
+}
+
+  @keyframes breathe {
+    0% {
+      transform: scale(0.7);
+    }
+
+    50% {
+      transform: scale(0.8);
+    }
+
+    100% {
+      transform: scale(0.7);
+    }
+  }
+
+  .breathe-animation {
+    animation-name: breathe;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }

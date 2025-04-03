@@ -1,0 +1,24 @@
+{
+  "name": "bed-ca2-kaungyemyintmo",
+  "version": "1.0.0",
+  "description": "You are required to build your folder structures for your project.",
+  "main": "index.js",
+  "scripts": {
+    "init_tables": "node src/configs/createSchema.js && node src/configs/initTables.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test:server": "concurrently \"npm run dev\" \"npm run test -- playwright.test.js --json --outputFile='test_results.json'\" --kill-others --success first"
+  },
+  "author": "Kaung Ye Myint Mo",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.3.2",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.7.1",
+    "nodemon": "^3.0.3"
+  }
+}
